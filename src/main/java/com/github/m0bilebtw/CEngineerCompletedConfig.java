@@ -94,7 +94,7 @@ public interface CEngineerCompletedConfig extends Config {
     default boolean announceSlayerTasks() {
         return true;
     }
-
+    
     @ConfigItem(
             keyName = "announceFarmingContracts",
             name = "Completed Farming Contracts",
@@ -197,6 +197,15 @@ public interface CEngineerCompletedConfig extends Config {
             section = SECTION_NON_ACHIEVEMENT_ANNOUNCEMENTS,
             position = 25
     )
+
+    @ConfigItem(
+        keyName= "announceSuperior",
+        name = "Superior Monster Spawned",
+        description = "Should C Engineer announce when a superior spawns?",
+        section  = SECTION_NON_ACHIEVEMENT_ANNOUNCEMENTS,
+        position = 26
+    )
+
     default boolean announceBrimstoneKeyDrop() {
         return true;
     }
